@@ -9,10 +9,11 @@ addProperty = (k,v) ->
 class Node
   constructor: ->
     require('node-uuid')
+
     @node =
       method: 'CREATE'
       type: 'Thing'.toUpperCase()
-      properties: @props
+      properties: @props={}
       uuid: uuid.v4()
     @props=props
 
@@ -23,15 +24,12 @@ class Node
 
   properties: (props) ->
     prop = for k,v of props
-      "#{k}:\"#{v}\""
-    @node.properties = prop.join ", "
-    addProperty = (k,v,props) ->
-      if k isnt null and v isnt null
-        props[k]=v
-        return props
-    @
+     k=v
+    @node.properties = props
+    this
 
-  createMethod: (newMethod) ->
+
+  withMethod: (newMethod) ->
     @node.method = newMethod
     this
 
@@ -45,7 +43,7 @@ class Node
 
     this
 
-  addProp: (k,v) ->
+  withProp: (k,v) ->
     @props[k]=v
     @
   build: ()->
@@ -62,17 +60,20 @@ class Node
 
 
     @.cypher = "#{method} (#{id}:#{label} {#{params}, uuid:\"#{uuid}\"}) #{suf}"
-    @
 
 
-  @.node
+
+    return r =@.node
+
 module.exports = Node
 
-console.log x = new Node().type('Ding')
+x = new Node().type('Ding')
 x
 
-x.properties(props).createMethod('MERGE').build()
-console.log x.props
-x.addProp 'd', 'ss'
-x.properties(props).createMethod('MERGE').withReturn('true').build()
+x.properties(props).withMethod('MERGE').build()
+x.props
+x.withProp 'd', 'ss'
+x.withProp 's', 'df'
+x.properties(props).withMethod('MERGE').withReturn('true').build()
+
 console.log x
