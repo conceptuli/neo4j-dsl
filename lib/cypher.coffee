@@ -1,0 +1,1 @@
+module.exports = cypher = require('cypher-stream')('http://localhost:7474')
