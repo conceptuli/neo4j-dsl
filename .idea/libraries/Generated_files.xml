@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/lib/cypher_builder/createMethodFactory.js" />
+        <item url="file://$PROJECT_DIR$/test/createTest.js" />
+        <item url="file://$PROJECT_DIR$/test/paramListTest.js" />
+        <item url="file://$PROJECT_DIR$/lib/Node.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/params-list-builder/index.js" />
+        <item url="file://$PROJECT_DIR$/lib/cypher.js" />
+        <item url="file://$PROJECT_DIR$/lib/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/nodeunit/test/fixtures/coffee/mock_coffee_module.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/params-list-builder/test/test.js" />
+        <item url="file://$PROJECT_DIR$/lib/cypher_builder/createType.js" />
+        <item url="file://$PROJECT_DIR$/lib/node2.js" />
+        <item url="file://$PROJECT_DIR$/lib/constraint.js" />
+        <item url="file://$PROJECT_DIR$/lib/rels.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/ParamList.js" />
+      <root url="file://$PROJECT_DIR$/lib/ParamList.js" />
+      <root url="file://$PROJECT_DIR$/lib/cypher_builder/createMethodFactory.js" />
+      <root url="file://$PROJECT_DIR$/test/createTest.js" />
+      <root url="file://$PROJECT_DIR$/test/paramListTest.js" />
+      <root url="file://$PROJECT_DIR$/lib/Node.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/params-list-builder/index.js" />
+      <root url="file://$PROJECT_DIR$/lib/cypher.js" />
+      <root url="file://$PROJECT_DIR$/lib/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/nodeunit/test/fixtures/coffee/mock_coffee_module.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/params-list-builder/test/test.js" />
+      <root url="file://$PROJECT_DIR$/lib/cypher_builder/createType.js" />
+      <root url="file://$PROJECT_DIR$/lib/node2.js" />
+      <root url="file://$PROJECT_DIR$/lib/constraint.js" />
+      <root url="file://$PROJECT_DIR$/lib/rels.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
